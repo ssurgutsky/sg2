@@ -1,3 +1,4 @@
+if( 'function' === typeof importScripts) {
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox-sw.js');
 
 const CACHE = "pwabuilder-page";
@@ -43,3 +44,4 @@ self.addEventListener('fetch', (event) => {
     })());
   }
 });
+}
