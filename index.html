@@ -9,17 +9,8 @@
 <body style="background-color: #000000">
 	<div id=app>
 	</div>
-	<script type="module">
-		// This is the "Offline page" service worker
-		// Add this below content to your HTML page inside a <script type="module"></script> tag, or add the js file to your page at the very top to register service worker
-	
-		import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-	
-		const el = document.createElement('pwa-update');
-		document.body.appendChild(el);
-	</script>
-
-
+	<script type=text/javascript src=pwabuilder-sw-register.js></script>
+	<script type=text/javascript src=pwabuilder-sw.js></script>
 	<script type=text/javascript src=../cordova.js></script>
 	<script type=text/javascript src=static/js/manifest.37a2ecbb1d1b7e6c9ada.js></script>
 	<script type=text/javascript src=static/js/vendor.f4bb22d0db73ee974394.js></script>
